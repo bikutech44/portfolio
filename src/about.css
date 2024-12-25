@@ -1,0 +1,721 @@
+#about{
+    margin-top: 1px;
+    /* background-color: rgba(9, 9, 9, 0.906); */
+    background-color: rgba(20, 20, 20, 0.906);
+    min-height: 100vh;
+    padding: 5rem 10rem;
+    padding-bottom: 3.2rem;
+    width: 100vw;
+}
+
+
+/* short intro and pic */
+.about-class{
+    display: flex;
+}
+.about-class .about-img{
+    height: 19.4rem;
+    width: 18.6rem;
+    border-radius: 20px;
+    background-color: rgb(36, 35, 35);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.about-class .aboutpic1{
+    height: 18rem;
+
+    border-radius: 20px;
+}
+.about-class .short-intro{
+    height: 38vh;
+    margin-left: 4vw;
+    width: 57vw;
+}
+.about-class .about-me{
+    text-align: center;
+}
+.about-class .about-me span{
+    color: rgb(173, 170, 166);
+    display: inline-block; 
+    animation: rotate 3s linear infinite;
+    /* font-size: larger; */
+}
+@keyframes rotate {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+.about-class .short-intro-biku{
+    margin-top: 4vh;
+    background-color: rgb(27, 26, 26);
+    height: 28vh;
+    border-radius: 16px;
+    padding-left: 2vw;
+    padding-right: 1.4vw;
+}
+
+.about-class .short-intro-biku .symbol2{
+    margin-top: -1.4rem;
+    font-size: 2.38rem;
+}
+.about-class .short-intro-biku .symbol, .symbol2{
+    color: rgb(173, 170, 166);
+}
+
+.about-class .short-intro-biku .name{
+    font-size: 1.8rem;
+    /* margin-top: 0vh; */
+}
+.about-class .short-intro-biku p{
+    color: rgb(173, 170, 166);
+}
+
+/* education & experience */
+.edu-exp{
+    margin-top: 2.8rem;
+    display: flex;
+}
+
+/* education */
+.edu-exp .about-edu{
+    height: 16.4rem;
+    background-color: rgb(26, 25, 25);
+    width: 38rem;
+    border-radius: 16px;
+    padding: 1rem 1.4rem;
+}
+.edu-exp  h1{
+    font-size: 1.5rem;
+    color: rgb(254, 253, 253);
+
+}
+.edu-exp h2{
+    font-size: 1.2rem;
+    color: rgb(238, 234, 230);
+}
+.edu-exp  h3{
+    margin-top: 1.4rem;
+    font-size: 0.9rem;
+    color: rgb(173, 170, 166);
+}
+.edu-exp  p{
+    font-size: 1rem;
+    color: rgb(196, 197, 206);
+}
+
+
+/* experience */
+.edu-exp .about-exp{
+    margin-left: 4rem;
+    height: 16.4rem;
+    background-color: rgb(26, 25, 25);
+    width: 38rem;
+    border-radius: 16px;
+    padding: 1rem 1.4rem;
+}
+.opacity-change{
+    animation: opacity-c 5s linear infinite;
+}
+@keyframes opacity-c{
+    0%{
+        opacity: 0.4;
+    }
+}
+.edu-exp .about-exp p a {
+    font-style: italic;
+    color: rgb(196, 197, 206);
+}
+.brin{
+    display: none;
+}
+
+
+/* skills */
+
+.skills-other{
+    margin-top: 2.8rem;
+    display: flex;
+}
+
+.skills-other .skills{
+    width: 48rem;
+    min-height: 14.8rem;
+    background-color: rgb(26, 25, 25);
+    border-radius: 16px;
+    padding: 1rem 1.4rem;
+}
+.skills-other .skills h1{
+    font-size: 1.5rem;
+    color: rgb(244, 237, 237);
+}
+.skills-other .skills .skill{
+    display: flex;
+    justify-content: center;
+    margin-top: 1.8rem;
+}
+.skills-other .skills .skill div{
+    margin: 0 0.45rem;
+    max-width: 200px;
+}
+.skills-other .skills .skill h4{
+    text-align: center;
+    margin-top: 0.5rem;
+    color: rgb(200, 197, 194);
+}
+
+
+/* others */
+.skills-other .about-other .top{
+    background-color:  rgb(26, 25, 25);
+    height: 7.2rem;
+    margin-left: 4rem;
+    width: 28rem;
+    border-radius: 16px;
+    padding: 1rem 1.4rem;
+}
+.skills-other .about-other h2{
+    color: rgb(247, 242, 242);
+    margin-bottom: 1rem;
+}
+
+
+.skills-other .about-other .top a{
+    text-decoration: none;
+    font-size: 1.45rem;
+    color: rgb(96, 150, 192);
+    margin-right: 2rem;
+    margin-left: 0.4rem;
+}
+.skills-other .about-other .top a:hover{
+    color: rgb(91, 169, 243);
+}
+
+.skills-other .about-other .next{
+    background-color:  rgb(26, 25, 25);
+    height: 6.4rem;
+    margin-left: 4rem;
+    margin-top: 1rem;
+    width: 28rem;
+    border-radius: 16px;
+    padding: 1rem 1.4rem;
+}
+
+.skills-other .about-other .next p{
+    color: rgb(213, 199, 199);
+}
+
+.skills-other .about-other .next a{
+     color: rgb(149, 173, 223);
+     text-decoration: underline;
+}
+
+
+
+
+
+/* media device */
+@media screen and (min-width: 1700px){
+    .about-class .short-intro-biku .name{
+        margin-top: 2.8vh;
+    }
+}
+
+@media screen and (min-width: 1650px){
+    .about-class .short-intro-biku .symbol{
+        font-size: 2rem;
+    }
+    .about-class .short-intro-biku .symbol2{
+        margin-top: -1.8rem;
+        font-size: 3.3rem;
+    }
+    .about-class .short-intro-biku .symbol, .symbol2{
+        color: rgb(173, 170, 166);
+    }
+
+    .about-class .short-intro-biku .name{
+        margin-top: 1.6vh;
+    }
+    
+
+    .about-class .short-intro{
+        width: 57.6vw;
+        max-height: max-content;
+    }
+
+    .about-class .about-img{
+        height: 36vh;
+        width: 17.4vw;
+    }
+    .about-class .aboutpic1{
+        height: 34.4vh;
+    }
+    
+
+    /* education and experience */
+
+    .edu-exp .about-edu{
+        width: 37.8vw;
+    }
+    .edu-exp .about-exp{
+        width: 37.8vw;
+    }
+
+
+    /* skills and other div */
+    .skills-other .skills{
+        width: 44vw;
+    }
+
+    .skills-other .about-other .top, .skills-other .about-other .next{
+        width: 31.6vw;
+    }
+
+    .skills-other .about-other .next{
+        padding-top: 2.8vh;
+    }
+    .skills-other .about-other .next{
+        height: fit-content;
+    }
+}
+
+@media screen and (max-width: 1600px){
+    .skills-other .about-other .top, .skills-other .about-other .next{
+        margin-left: 12%;
+    }
+    
+}
+
+@media screen and (max-width: 1570px){
+    .skills-other .about-other .top, .skills-other .about-other .next{
+        width: 90%;
+        height: auto;
+    }
+    .skills-other .about-other .top a{
+        margin-left: 0.1rem;
+        margin-right: 8%;
+    }
+}
+
+@media screen and (max-width: 1475px){
+    .edu-exp .about-edu, .edu-exp .about-exp{
+        height: 18.2rem;
+    }
+    .skills-other .about-other .top{
+        padding-right: 0.4rem;
+    }
+    .skills-other .about-other .top h2{
+        margin-bottom: 0.5rem;
+        font-size: 1.1rem;
+    }
+
+
+}
+
+@media screen and (max-width: 1400px){
+    .about-class .short-intro p{
+        padding-right: 5px;
+    }
+    .edu-exp .about-edu, .edu-exp .about-exp{
+        height: 18.4rem;
+    }
+
+    .skills-other .skills .skill div{
+        margin-top: 2.8%;
+    }
+    .skills-other .about-other .next p{
+        font-size: 0.9rem;
+    }
+    .skills-other .about-other .top, .skills-other .about-other .next{
+        margin-left: 1.4rem;
+        width: 93%;
+    }
+}
+
+@media screen and (max-width: 1360px){
+    .about-class .short-intro{
+        margin-left: 5.4rem;
+    }
+
+    .skills-other .skills{
+        min-width: 30rem;
+        /* height: 28rem; */
+        max-width: 34rem;
+    }
+    .skills-other .skills .skill{
+        margin-top: 0;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        
+    }
+    .skills-other .about-other .top, .skills-other .about-other .next{
+        margin-left: 4rem;
+        width: 88%;
+    }
+
+
+    
+}
+
+@media screen and (max-width: 1300px){
+    #about{
+        padding: 5rem 5%;
+    }  
+    .about-class .aboutpic1{
+        height: 16.2rem;
+    }
+    .about-class .about-img{
+        margin-top: 1.2rem;
+        height: 17.6rem;
+    }
+    .about-class .short-intro{
+        margin-left: 3.6rem;
+        width: 64vw;
+        height: max-content;
+    }
+    .about-class .short-intro p{
+        padding-right: 3px;
+    }
+    .about-class .short-intro .short-intro-biku{
+        height: max-content;
+        padding-bottom: 0.4rem;
+    }
+
+    .edu-exp .about-edu, .edu-exp .about-exp{
+        height: 18rem;
+    }
+    .skills-other .skills{
+        min-width: 34rem;
+    }
+    .skills-other .about-other .top, .skills-other .about-other .next{
+        margin-left: 4rem;
+        width: 88%;
+    }
+
+
+}
+@media screen and (max-width: 1180px){
+    .edu-exp .about-edu, .edu-exp .about-exp{
+        height: 19rem;
+    }
+    .skills-other .skills .skill{
+        margin-top: 1.4rem;
+    } 
+    .skills-other .about-other .top, .skills-other .about-other .next{
+        margin-left: 12%;
+        width: 87%;
+    }
+}
+
+@media screen and (max-width: 1050px){
+    .about-class .aboutpic1{
+        height: 16.2rem;
+    }
+    
+    .about-class .about-img{
+        height: 17.2rem;
+        width: 16rem;
+        margin-top: 0.3rem;
+    }
+    .about-class .short-intro{
+        height: max-content;
+        width: 40rem;
+    }
+    .about-class .short-intro .about-me{
+        font-size: 1.2rem;
+    }
+    .about-class .short-intro .symbol{
+        font-size: 1.2rem;
+    }
+    .about-class .short-intro .symbol2{
+        font-size: 1.5rem;
+        margin-top: -0.95rem;
+        margin-left: 0.16rem;
+    }
+    .about-class .short-intro .name{
+        font-size: 1.2rem;
+        margin-top: 0.6rem;
+    }
+    .about-class .short-intro p{
+        font-size: 0.98rem;
+        margin-bottom: 0;
+        padding-bottom: 0;
+    }
+    .about-class .short-intro-biku{
+        height: fit-content;
+        padding-bottom: 1.2rem;
+    }
+
+    /* education & experience */
+    .edu-exp .about-edu,.edu-exp .about-exp{
+        min-height: 15rem;
+        max-height: 16rem;
+    }
+    .edu-exp h1{
+        font-size: 1.2rem;
+    }
+    .edu-exp h2{
+        font-size: 1rem;
+    }
+    .edu-exp p{
+        font-size: 0.8rem;
+    }
+
+    /* skills */
+    .skills-other .skills h1{
+        font-size: 1.2rem;
+    }
+
+}
+@media screen and (max-width: 1025px){
+    .about-class .short-intro{
+        margin-left: 1.6rem;
+    }
+    .about-class .about-img{
+        margin-top: 0;
+    }
+}
+
+@media screen and (max-width: 888px){
+    .about-class .short-intro{
+        margin-left: 1rem;
+    }
+    .about-class .about-img{
+        margin-top: 2rem;
+    }
+    /* exp */
+    .edu-exp .about-exp{
+        margin-left: 1rem;
+    }
+
+
+    /* skill */
+    .skills-other{
+        display: inline;
+    }
+    .skills-other .skills{
+        margin-top: 2rem;
+        min-width: 100%;
+    }
+    .skills-other .skills .skill{
+        min-height: 98%;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .skills-other .skills .skill div{
+        margin: 0.2rem;
+    }
+    .skills-other .about-other{
+        display: flex;
+        
+    }
+    .skills-other .about-other .top, .skills-other .about-other .next{
+        margin-left: 0;
+        margin-top: 1.5rem;
+        margin-bottom: 0;
+        width: 50%;
+
+    } 
+    .skills-other .about-other .top h2{
+        margin-bottom: 1rem;
+    }
+    .skills-other .about-other .next{
+        margin-left: 2%;
+    }
+   
+}
+
+@media screen and (max-width: 800px){
+    .skills-other .skills{
+        min-height: 12rem;
+    }
+}
+
+
+@media screen and (max-width: 700px){
+    #about{
+        padding-top: 6.4%;
+        padding-bottom: 2rem;
+    }
+    .about-class{
+        display: inline;
+    }
+    .about-class .about-img{
+        z-index: 2;
+        margin-left: 10%;
+        height: 12rem;
+        width: 11.4rem;
+        border-radius: 32px;
+        background-color: rgb(27, 26, 26);
+        border: 1px solid rgba(255, 0, 0, 0.05);
+    }
+    .about-class .about-img .aboutpic1{
+        height: 94%;
+        border-radius: 32px;
+    }
+    .about-class .short-intro{
+        margin-top: -8rem;
+        margin-left: 0;
+        width: 98.6%;
+        height: max-content;
+    }
+    .about-class .short-intro .about-me{
+        margin-left: 38%;
+    }
+    .about-class .short-intro .name{
+        margin-top: 2.8rem;
+    }
+
+
+    /* education & experience */
+    .edu-exp{
+        display: inline;
+    }
+    .edu-exp .about-edu{
+        width: 98.6%;
+        margin-top: 1rem;
+    }
+    .edu-exp .about-exp{
+        width: 98.6%;
+        margin-left: 0;
+        margin-top: 0.8rem;
+    }
+
+    /* skills */
+    .skills-other .skills{
+        min-width: 98.5%;
+        max-height: fit-content;
+        
+    }
+    .skills-other .skills .skill{
+        margin-bottom: 0;
+        padding-bottom: 0;
+        max-height: fit-content;
+
+    }
+    .skills-other .skills .skil div{
+        margin-bottom: 0;
+        max-height: max-content;
+    }
+
+    .skills-other .about-other .top{
+        width: 46%;
+    }
+    
+}
+
+@media screen and (max-width: 615px){
+    .skills-other .skills {
+        max-width: 96%;
+    }
+    .skills-other .skills .skill{
+        max-width: 100%;
+    }
+}
+
+@media screen and (max-width: 575px){
+    .about-class .about-img{
+        margin-top: 2%;
+        margin-left: 14%;
+        height: 8rem;
+        width: 7.8rem;
+    }
+    .about-class .short-intro{
+        margin-top: -24%;
+    }
+    .about-class .short-intro .short-intro-biku{
+        padding: 4%;
+        padding-top: 0;
+    }
+    .about-class .short-intro .name{
+        margin-top: 6%;
+    }
+
+    /* education | experiment */
+    .edu-exp .about-edu, .edu-exp .about-exp{
+        padding: 4%;
+    }
+
+    /* skills */
+
+    .skills-other .skills{
+        padding: 4%;
+        margin-top: 1.2rem;
+    }
+    .skills-other .skills h1{
+        font-size: 1.1rem;
+    }
+     
+    .skills-other .skills .skill div{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-left: 0;
+        padding-left: 0;
+    }
+    .skills-other .skills .skill div h4{
+        width: 100px;
+    }
+
+    /* skill others */
+    .skills-other .about-other{
+        display: inline-block;
+    }
+    .skills-other .about-other .top{
+        width: 98%;
+        padding: 4%;
+        margin-top: 1.2rem;
+    }
+    .skills-other .about-other .next{
+        width: 98%;
+        margin-left: 0;
+        padding: 4%;
+        margin-top: 1.2rem;
+        
+    }
+    .skills-other .about-other .top h2{
+        font-size: 1.05rem;
+    }
+
+}
+
+@media screen and (max-width: 470px){
+    .about-class .about-img{
+        margin-left: 12%;
+        height: 6rem;
+        width: 5.8rem;
+    }
+    .brin{
+        display: block;
+    }
+    .edu-exp .about-edu,.edu-exp .about-exp{
+        height: 100%;
+        min-height: max-content;
+        max-height: fit-content;
+        padding-bottom: 2%;
+    }
+    
+
+}
+@media screen and (max-width: 405px){
+    .about-class .about-img{
+        height: 5.4rem;
+        width: 5.1rem;
+    }
+    .about-class .short-intro .about-me{
+        font-size: 1rem;
+    }
+    .about-class .short-intro .name{
+        margin-top: 3.2%;
+    }
+    .about-class .short-intro p{
+        font-size: 0.9rem;
+    }
+
+}

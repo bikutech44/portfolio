@@ -1,0 +1,276 @@
+#service{
+    margin: 0;
+    margin-top: 1px;
+    height: fit-content;
+    /* height: 100vh-6rem; */
+    /* background-color: rgba(9, 9, 9, 0.906); */
+    background-color: rgba(20, 20, 20, 0.906);
+    padding: 5rem 10rem;
+    /* padding-bottom: 10rem; */
+}
+#service .service-header{
+    text-align: center;
+}
+#service .service-header span{
+    display: inline-block;
+    animation: rotate 4s linear infinite;
+    font-size: 1.5rem;
+}
+@keyframes rotate {
+     0%{
+        transform: rotate(8deg);
+     }
+     50%{
+        transform: rotate(30deg);
+     }
+     100%{
+        transform: rotate(8deg);
+     }
+  }
+
+
+.service_container ul li{
+   list-style: none;
+}
+
+
+/* div content*/
+
+.service_container{
+   color: rgb(236, 231, 231);
+   display: flex;
+   margin-top: 12rem;
+   justify-content: center;
+   column-gap: 1.8rem;
+   margin-bottom: 4rem;
+}
+.service_container .service_content{
+   position: relative;
+   border: 1px solid black;
+   width: 20vw;
+   background-color: rgb(26, 25, 25);
+   padding: 0.4rem 1.5rem;
+   border-radius: 16px;
+   padding-bottom: 2.8rem; 
+}
+
+.service_icon{
+   display: block;
+   font-size: 2.4rem;
+   margin-top: 2.6rem;
+}
+
+.service_title{
+   color: rgb(236, 229, 244);
+   font-size: 1.6rem;
+   margin-top: 1rem;
+   margin-bottom: 1.2rem;
+}
+.service_button{
+   color: rgb(201, 200, 200);
+   font-size: 1rem;
+   display: inline-flex;
+   align-items: center;
+   column-gap: 0.5rem;
+   cursor: pointer;
+   transition: 0.3s;
+}
+
+.service_button_icon{
+   transition: 0.3s;
+   font-size: 1.2rem;
+}
+
+.service_button:hover{
+   color: rgb(155, 154, 154);
+}
+.service_button:hover .service_button_icon{
+   transform: translateX(0.45rem);
+
+} 
+
+.service_modal{
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(18, 17, 17, 0.68);
+  backdrop-filter: blur(8px);
+  z-index: 6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+  opacity: 0;
+  visibility: hidden;
+  transition: .3s;
+  /* display: none; */
+}
+.service_modal_content{
+   width: 480px;
+   position: relative;
+   background-color: rgb(24, 24, 24);
+   border-radius: 16px;
+   padding: 4rem 1.6rem 2rem;
+}
+
+.services_modal_close{
+   position: absolute;
+   top: 1.5rem;
+   right: 1.5rem;
+   font-size: 1.5rem;
+   color: white;
+   cursor: pointer;
+}
+.service_modal_title,
+.service_modal_description{
+   text-align: center;
+}
+.service_modal_title{
+   font-size: 1.8rem;
+   font-weight: 200;
+   margin-bottom: 0.6rem;
+}
+.service_modal_description{
+   font-size: .9rem;
+   margin-bottom: 1.8rem;
+}
+.service_modal_service{
+   row-gap: .75rem;
+}
+.service_modal_list{
+   display: flex;
+   align-items: center;
+   column-gap: .8rem;
+}
+.service_modal_icon{
+   font-size: 1.1rem;
+}
+.service_modal_info{
+   font-size: 1rem;
+}
+
+
+.active-modal{
+   opacity: 1;
+   visibility: visible;
+}
+
+
+/* media screen device */
+@media screen and (max-width : 1300px){
+   .service_container{
+      margin-top: 10rem;
+   }
+   .service_container .service_content{
+      width: 36vw;
+   }
+}
+
+
+
+
+@media screen and (max-width : 1100px){
+   #service{
+      padding: 5rem 5%;
+      padding-bottom: 6rem;
+   }
+   .service_icon{
+      font-size: 1.8rem;
+   }
+   .service_title{
+      font-size: 1.4rem;
+   }
+   .service_container .service_content{
+      min-width: max-content;
+      width: 32vw;
+   }
+}
+
+@media screen and (max-width : 880px){
+   .service_container{
+      margin-bottom: 0;
+   }
+   .service-header{
+      font-size: 1.5rem;
+   }
+   .service_icon{
+      font-size: 2.2rem;
+   }
+   
+}
+
+@media screen and (max-width : 720px){
+   .service-header{
+      font-size: 1.4rem;
+   }
+   .service_container{
+      display: grid;
+      grid-row: auto;
+      margin-top: 4rem;
+   }
+
+   .service_icon{
+      font-size: 2rem;
+   }
+
+   .service_container .service_content{
+      width: 68vw;
+      margin-bottom: 1.8rem;
+   }
+
+   .service_modal_content{
+      width: 450px;
+   }
+   
+}
+@media screen and (max-width : 460px){
+   #service{
+      padding-top: 2rem;
+      height: max-content;
+      padding-bottom: 2rem;
+   }
+   .service-header{
+      font-size: 1.2rem;
+   }
+   .service_container .service_content{
+      width: 90vw;
+      margin-bottom: 1.1rem;
+      padding-bottom: 0.8rem;
+   }
+   .service_icon{
+      margin-top: 1.6rem;
+      font-size: 1.6rem;
+   }
+   .service_title{
+      font-size: 1.2rem;
+      margin-bottom: 0.8rem;
+   }
+   .service_button{
+      font-size: 0.8rem;
+   }
+   .service_modal_content{
+      width: 90vw;
+   }
+
+   /* for modal containet */
+   .services_modal_close{
+      font-size: 1.4rem;
+   }
+   .service_modal_title{
+      font-size: 1.16rem;
+   }
+   .service_modal_description{
+      font-size: 0.88rem;
+   }
+
+   .service_modal_icon{
+      font-size: 0.95em;
+   }
+   .service_modal_info{
+      font-size: 0.82rem;
+   }
+
+}
